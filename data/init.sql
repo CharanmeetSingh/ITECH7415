@@ -1,0 +1,29 @@
+CREATE DATABASE inventory;
+CREATE DATABASE LoginSystem;
+
+use inventory;
+
+CREATE TABLE item (
+	id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	image BLOB(500),
+	item VARCHAR(30) NOT NULL,
+	icode VARCHAR(30),
+	createdate VARCHAR(30) NOT NULL,
+	expirydate VARCHAR(50) NOT NULL,
+	category VARCHAR(50),
+	ccode VARCHAR(30),
+	price DECIMAL(8, 2) NOT NULL,
+	quantity INT(30) NOT NULL,
+	date TIMESTAMP
+);
+
+
+use LoginSystem;
+
+CREATE TABLE users (
+	id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	username VARCHAR(255) NOT NULL,
+	password VARCHAR(200) NOT NULL,
+	email VARCHAR(255) NOT NULL,
+	create_datetime DATETIME NOT NULL
+);
