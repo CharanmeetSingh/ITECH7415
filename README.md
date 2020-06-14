@@ -1,2 +1,2 @@
 # ITECH7415
- Inventory Management
+ Inventory Management System
